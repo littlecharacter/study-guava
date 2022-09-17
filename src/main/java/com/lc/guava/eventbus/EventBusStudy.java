@@ -3,6 +3,11 @@ package com.lc.guava.eventbus;
 import com.google.common.eventbus.EventBus;
 
 /**
+ * 源码分析：https://juejin.cn/post/6905319095517609997
+ * 1.SubscriberRegistry#getAnnotatedMethods(java.lang.Class)使用guava自封装的缓存
+ * 2.Executor -> 同步异步
+ * 3.看清Dispatcher具体用的那个（EventBus构造方法）
+ *
  * 生产实践：https://juejin.cn/post/6844903538183634952
  */
 public class EventBusStudy {
