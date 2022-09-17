@@ -4,11 +4,14 @@ import com.google.common.eventbus.EventBus;
 
 /**
  * 源码分析：https://juejin.cn/post/6905319095517609997
- * 1.SubscriberRegistry#getAnnotatedMethods(java.lang.Class)使用guava自封装的缓存
+ * 1.SubscriberRegistry#getAnnotatedMethods(java.lang.Class)使用 guava 自封装的缓存
  * 2.Executor -> 同步异步
- * 3.看清Dispatcher具体用的那个（EventBus构造方法）
+ * 3.看清 Dispatcher 具体用的那个（EventBus构造方法）
  *
  * 生产实践：https://juejin.cn/post/6844903538183634952
+ * 1.自定义 @EventBusListener 注解
+ * 2.EventBusCenter 简单封装 EventBus
+ * 3.自定义注解 + Spring 完成 EventBusCenter 监听者的注册
  */
 public class EventBusStudy {
     public static void main(String[] args) {
